@@ -1,0 +1,22 @@
+<div class="formulario" [formGroup]="formGroup">
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <mat-icon matPrefix>pets</mat-icon>
+        <input type="text" matInput formControlName="nombre">
+    </mat-form-field>
+
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Fecha_Nacimiento</mat-label>
+        <mat-icon matPrefix>celebration</mat-icon>
+        <input type="date" matInput formControlName="nacimiento">
+    </mat-form-field>
+
+    <mat-form-field class="controles" appearance="outline">
+        <mat-label>Raza</mat-label>
+        <mat-icon matPrefix>content_paste_search</mat-icon>
+        <input type="text" matInput formControlName="raza">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="saveMascota()" class="controles">Guardar Mascota</button>
+    <button mat-raised-button color="primary" (click)="verListado()" class="controles">Listado</button>
+</div>

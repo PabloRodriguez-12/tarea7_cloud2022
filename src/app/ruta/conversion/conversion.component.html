@@ -1,0 +1,8 @@
+<div class="comp2">
+    <div id="con">Conversion</div>
+    <div id="b1">
+        <b>Ingrese Temperatura(Celcius):</b> <input type="number" value="0" id="num1" [(ngModel)]="numcel">
+        <p><button id="conver" (click)="conver()">Convertir</button></p>
+        <b><div id="respuesta" *ngIf="mostrarmsj"> La Temperatura en Fahrenheit es: {{res}} </div></b>
+    </div>
+</div>
